@@ -1,0 +1,17 @@
+header {
+  margin: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  border: solid 1px black;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.options {
+  display: flex;
+  gap: 120px;
+}

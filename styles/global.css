@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f9f0dd;
+  --button-color: #c98c48;
+  --card-color: #735b4f;
+  --text-color-primary: #40311f;
+  --text-color-secondary: #f4f4cd;
+  --text-color-hover: #000;
+
+  --font-family: 'Montserrat', sans-serif;
+  --text: 600 36px/5.1 var(--font-family);
+}
+
+body {
+  font: var(--text);
+  color: var(--text-color-primary);
+  background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--text-color-hover);
+}
+
+img {
+
+}
