@@ -3,7 +3,6 @@ header {
   display: flex;
   justify-content: space-between;
   height: 200px;
-  border: solid 1px black;
 }
 
 .logo {
@@ -14,4 +13,25 @@ header {
 .options {
   display: flex;
   gap: 120px;
+}
+
+@media (max-width: 1200px) {
+  header {
+  margin: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.options {
+  display: flex;
+  gap: 9px;
+  font-size: 15px;
+  align-items: center;
+}
 }
