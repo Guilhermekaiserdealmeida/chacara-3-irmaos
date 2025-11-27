@@ -17,7 +17,7 @@
     max-width: 500px;
     height: 80%;
     background: #7B5B4A;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.65);
     padding: 25px;
     border-radius: 12px;
 }
@@ -28,7 +28,7 @@
     font-size: 22px;
 }
 
-p {
+main p {
     color: #F4F4CD;
     font-size: 20px;
     line-height: 1.5;
@@ -64,26 +64,6 @@ p {
 
 }
 
-/* ----- BOTÃO ----- */
-.btn-diretrizes {
-    grid-column: 2;
-    padding: 12px 20px;
-    background: #C98D4A;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    transition: 0.2s;
-    font-family: var(--text);
-    font-size: 24px;
-}
-
-.btn-diretrizes:hover {
-    background: #b67a38;
-}
-
 
 .avaliacoes-container {
     display: flex;
@@ -92,7 +72,7 @@ p {
     flex-wrap: row;
     padding: 40px;
     gap: 40px;
-    background: #F4EED2;
+    background: #f9f0dd;
     /* Cor igual ao fundo da sua página */
 }
 
@@ -102,7 +82,7 @@ p {
     background: #fff;
     border-radius: 14px;
     text-align: center;
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.65);
 }
 
 .avatar {
@@ -124,6 +104,33 @@ p {
     color: #333;
     font-weight: 500;
     line-height: 1.4;
+}
+
+.avaliar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.avaliar>button {
+    border: none;
+    height: 60px;
+    padding: 12px 20px;
+    background: #C98D4A;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.65);
+    transition: 0.2s;
+    font-family: var(--text);
+    font-size: 24px;
+}
+
+.avaliar button:hover {
+    background: #b67a38;
 }
 
 
@@ -148,7 +155,7 @@ p {
         max-width: 500px;
         height: 110%;
         background: #7B5B4A;
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.65);
         padding: 5px;
         border-radius: 12px;
     }
@@ -159,7 +166,7 @@ p {
         font-size: 11px;
     }
 
-    p {
+    main  p {
         color: #F4F4CD;
         font-size: 9px;
         line-height: 1.5;
@@ -177,20 +184,6 @@ p {
         font-size: 7px;
     }
 
-    .btn-diretrizes {
-        font-family: var(--text);
-        font-size: 12px;
-        padding: 6px 10px;
-        background: #C98D4A;
-        border: none;
-        border-radius: 8px;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-        transition: 0.2s;
-    }
-
     .avaliacoes-container {
         display: flex;
         justify-content: space-evenly;
@@ -199,9 +192,9 @@ p {
         padding-right: 5px;
         padding-left: 5px;
         gap: 10px;
-        background: #F4EED2;
         /* Cor igual ao fundo da sua página */
     }
+
     .card {
         display: flex;
         flex-direction: column;
@@ -212,29 +205,44 @@ p {
         background: #fff;
         border-radius: 14px;
         text-align: center;
-        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.65);
 
     }
 
     .avatar {
-    
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 5px;
-}
 
-.stars {
-    font-size: 14px;
-    color: #f9e646;
-    /* amarelo igual ao da imagem */
-    margin-bottom: 7px;
-}
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+    }
 
-.texto {
-    font-size: 8px;
-    color: #333;
-    font-weight: 500;
-    line-height: 1.4;
-}
+    .stars {
+        font-size: 14px;
+        color: #f9e646;
+        /* amarelo igual ao da imagem */
+        margin-bottom: 7px;
+    }
+
+    .texto {
+        font-size: 8px;
+        color: #333;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+    .avaliar button {
+        border: none;
+        height: 30px;
+        padding: 12px 20px;
+        background: #C98D4A;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.65);
+        transition: 0.2s;
+        font-family: var(--text);
+        font-size: 12px;
+    }
 }
