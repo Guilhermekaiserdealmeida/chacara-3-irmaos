@@ -16,10 +16,20 @@ footer {
 
 .infos {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(3, 55px);
     grid-template-columns: 10% 90%;
     align-items: center;
 
+}
+
+.infos .face {
+    width: 40px;
+    height: 40px;
+}
+
+.infos .insta {
+    width: 40px;
+    height: 40px;
 }
 
 .infos h2 {
@@ -73,12 +83,23 @@ footer {
     .infos {
         display: grid;
         grid-template-rows: repeat(3, 30px);
+        grid-template-columns: 15% 70%;
     }
 
 
     .infos img {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .infos .face {
+        width: 20px;
+        height: 20px;
+    }
+
+    .infos .insta {
+        width: 20px;
+        height: 20px;
     }
 
     .infos p {
