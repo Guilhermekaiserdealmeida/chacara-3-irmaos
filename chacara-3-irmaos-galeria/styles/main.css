@@ -1,0 +1,248 @@
+/* ----- LAYOUT GERAL ----- */
+.sobre-container {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+/* ----- CAIXAS DE TEXTO ----- */
+.bloco {
+    width: 75%;
+    max-width: 500px;
+    height: 80%;
+    background: #7B5B4A;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.65);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.bloco h2 {
+    color: #F4F4CD;
+    text-align: center;
+    font-size: 22px;
+}
+
+main p {
+    color: #F4F4CD;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* ----- LISTA ----- */
+.lista {
+    color: #F4F4CD;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista li {
+    height: 30px;
+    font-size: 16px;
+}
+
+/* ----- IMAGENS ----- */
+.img-topo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    grid-column: 2;
+
+}
+
+.img-baixo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    grid-column: 1;
+
+}
+
+
+.avaliacoes-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: row;
+    padding: 40px;
+    gap: 40px;
+    background: #f9f0dd;
+    /* Cor igual ao fundo da sua página */
+}
+
+.card {
+    width: 260px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.65);
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.stars {
+    font-size: 28px;
+    color: #f9e646;
+    /* amarelo igual ao da imagem */
+    margin-bottom: 15px;
+}
+
+.texto {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.avaliar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.avaliar>button {
+    border: none;
+    height: 60px;
+    padding: 12px 20px;
+    background: #C98D4A;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.65);
+    transition: 0.2s;
+    font-family: var(--text);
+    font-size: 24px;
+}
+
+.avaliar button:hover {
+    background: #b67a38;
+}
+
+
+/* ----- RESPONSIVIDADE ----- */
+@media (max-width: 1200px) {
+    .sobre-container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .img-topo,
+    .img-baixo,
+    .btn-diretrizes {
+        grid-column: 1;
+    }
+
+    .bloco {
+        width: 75%;
+        max-width: 500px;
+        height: 110%;
+        background: #7B5B4A;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.65);
+        padding: 5px;
+        border-radius: 12px;
+    }
+
+    .bloco h2 {
+        color: #F4F4CD;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    main  p {
+        color: #F4F4CD;
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    .lista {
+        color: #F4F4CD;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lista li {
+        height: 15px;
+        font-size: 7px;
+    }
+
+    .avaliacoes-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        padding-right: 5px;
+        padding-left: 5px;
+        gap: 10px;
+        /* Cor igual ao fundo da sua página */
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 130px;
+        height: 200px;
+        padding: 10px;
+        background: #fff;
+        border-radius: 14px;
+        text-align: center;
+        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.65);
+
+    }
+
+    .avatar {
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+    }
+
+    .stars {
+        font-size: 14px;
+        color: #f9e646;
+        /* amarelo igual ao da imagem */
+        margin-bottom: 7px;
+    }
+
+    .texto {
+        font-size: 8px;
+        color: #333;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+    .avaliar button {
+        border: none;
+        height: 30px;
+        padding: 12px 20px;
+        background: #C98D4A;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.65);
+        transition: 0.2s;
+        font-family: var(--text);
+        font-size: 12px;
+    }
+}

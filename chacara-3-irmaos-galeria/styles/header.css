@@ -1,0 +1,41 @@
+header {
+  margin-bottom: 40px;
+  margin-right: 40px;
+  margin-left:15px;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.options {
+  display: flex;
+  gap: 120px;
+}
+
+@media (max-width: 1200px) {
+  header {
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-left:15px;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.options {
+  display: flex;
+  gap: 9px;
+  font-size: 15px;
+  align-items: center;
+}
+}
